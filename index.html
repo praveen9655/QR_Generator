@@ -29,6 +29,8 @@
                     <div id="imgBox" class="d-flex justify-content-center">
                         <img src="" id="qrImage" class="img-fluid my-2" width="100px">
                     </div>
+                    <p class="badge bg-danger mx-5 " id="errMsg">Please enter any value</p>
+
                     <div >
                         <button class="btn btn-primary" onclick="qrGen()">Generate QR</button>
                     </div>
@@ -44,12 +46,6 @@
             </div>
         </div>
     </div>
-    <script>
-        let inTex = document.getElementById('inText');
-        let inImg = document.getElementById('qrImage');
-        function qrGen(){
-            inImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data='+ inTex.value;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
