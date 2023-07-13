@@ -1,6 +1,7 @@
 let inText = document.getElementById('inText');
 let inImg = document.getElementById('qrImage');
 let errMsg = document.getElementById('errMsg');
+
 function qrGen(){
     if(inText.value == ''){
         errMsg.style.display = 'block';
